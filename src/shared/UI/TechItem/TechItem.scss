@@ -1,0 +1,49 @@
+@use '/src/styles/pelletes' as plt;
+@use '/src/styles/function' as fn;
+@use '/src/styles/mixins' as *;
+
+$color-shadow: #0000004d;
+$color-outline: #ffffff1a;
+$bg: plt.$background;
+$bg-about: lighten($bg, 30);
+
+.stackproject {
+    @include flex-center;
+    cursor: pointer;
+    box-shadow: 6px 6px 14px 6px $color-shadow;
+    outline: 1px solid $color-outline;
+    width: fit-content;
+    padding-left: fn.rem(13);
+    padding-right: fn.rem(13);
+    height: 40px;
+    border-radius: 5px;
+    background: $bg;
+    transition: 0.2s ease-in-out; 
+    position: relative;
+    gap: fn.rem(10);
+
+    &:hover {
+        background: lighten($bg, 50%);
+        color: black;
+        transform: scale(1.04);
+    }
+
+    .stackproject-name {
+        color: plt.$text;
+        font-size: fn.rem(20);
+    }
+
+    .about-stack {
+        z-index: 100;
+        padding: fn.rem(8);
+        border-radius: 5px;
+        color: plt.$text;
+        font-size: fn.rem(18);
+        position: absolute;
+        left: 50%;
+        top: 110%;
+        width: 300px;
+        height: auto;
+        background: $bg-about;
+    }
+}

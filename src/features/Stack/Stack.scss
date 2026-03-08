@@ -1,0 +1,18 @@
+@use '../../styles/function' as fn;
+
+.stack {
+    outline: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: fn.rem(30);
+    height: auto;
+
+    .stack-grid {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 300px;
+        column-gap: fn.rem(30);
+    }
+}

@@ -1,0 +1,17 @@
+@use '/src/styles/pelletes' as plt;
+@use '/src/styles/function' as fn;
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background: plt.$background;
+    gap: fn.rem(50);
+    
+    section {
+        width: 98%;
+        padding: fn.rem(8);
+    }
+}

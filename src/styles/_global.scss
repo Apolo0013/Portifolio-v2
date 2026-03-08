@@ -1,0 +1,37 @@
+@use './pelletes' as plt;
+@use './function' as fn;
+
+.h1-text {
+    color: plt.$text;
+    font-weight: bold;
+    font-size: fn.rem(45);
+}
+
+.h2-text {
+    color: plt.$text;
+    font-weight: bold;
+    font-size: fn.rem(30);
+}
+
+.p-text {
+    color: plt.$text-secondary;
+    font-size: fn.rem(22);
+}
+
+//quadrado aspect-radio
+.square-asp {
+    aspect-ratio: 1 / 1;
+}
+
+//center com flex
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+$color-shadow: #0000004d;
+
+button {
+    cursor: pointer;
+    box-shadow: 6px 6px 14px 6px $color-shadow;
+}
