@@ -1,7 +1,6 @@
 @use '../../styles/function' as fn;
 
 .stack {
-    outline: 1px solid red;
     display: flex;
     flex-direction: column;
     gap: fn.rem(30);

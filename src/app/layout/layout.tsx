@@ -1,3 +1,4 @@
+import AboutMe from '../../features/AboutMe/AboutMe'
 import Hero from '../../features/Hero/Hero'
 import NavBar from '../../features/NavBar/NavBar'
 import Projects from '../../features/Projects/Projects'
@@ -12,6 +13,7 @@ function Layout() {
             <Hero />
             <Projects />
             <Stack />
+            <AboutMe />
         </main>
     )
 }
