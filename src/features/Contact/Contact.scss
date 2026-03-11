@@ -1,0 +1,9 @@
+@use '../../styles/mixins' as *;
+
+.wraper-contact {
+    @include flex-center;
+
+    .contact {
+        @include card-section;
+    }
+}

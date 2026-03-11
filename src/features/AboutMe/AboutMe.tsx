@@ -13,7 +13,7 @@ function AboutMe() {
             <div className='aboutme'>
                 <h1 className="h1-text">Sobre Mim</h1>
                 <div className="divider-about"><div></div></div>
-                <ul className='list-highlights'>
+                <ul>
                     <li>
                         <img
                             src={ImgCalendar}
@@ -43,7 +43,7 @@ function AboutMe() {
                     </li>
                 </ul>
                 <div className="divider-about"><div></div></div>
-                <ul className='list-details'>
+                <ul>
                     <li>
                         <img
                             src={ImgShine}
