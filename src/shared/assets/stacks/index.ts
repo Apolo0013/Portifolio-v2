@@ -12,6 +12,7 @@ import gitHub from './github.svg'
 import html from './html.svg'
 import css from './css.svg'
 import python from './python.svg'
+import scss from './scss.svg'
 
 export const imagens = {
     react: react,
@@ -28,6 +29,7 @@ export const imagens = {
     css: css,
     html: html,
     python: python,
+    scss: scss
 } as const
 
 export type ImagensStacks = keyof typeof imagens
@@ -46,5 +48,6 @@ export const nameStacks: Record<ImagensStacks, string> = {
     zustand: "Zustand",
     css: "CSS",
     html: "HTML",
-    python: "Python"
+    python: "Python",
+    scss: "SCSS"
 } as const

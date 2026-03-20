@@ -1,14 +1,18 @@
+@use '../../styles/function' as fn;
+
 .hero {
+    flex-shrink: 0;
     height: 500px;
     display: flex;
     align-items: center;
 
     .wraper-content-hero {
+        align-items: stretch;
         margin-left: 8%;
         display: flex;
         flex-direction: column;
-        gap: 20px;
         width: 50%;
         height: fit-content;
+        gap: fn.rem(8);
     }
 }

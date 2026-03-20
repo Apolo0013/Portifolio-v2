@@ -7,7 +7,7 @@ import ButtonUI from '../../shared/UI/Button/ButtonUI'
 
 function Contact() {
     return (
-        <section className='wraper-contact'>
+        <section className='section wraper-contact' data-id="contact">
             <div className="contact">
                 <h1 className="h1-text">Contato</h1>
                 <div className="divider-about"><div></div></div>
@@ -18,7 +18,10 @@ function Contact() {
                             alt="Imagem de email"
                         />
                         <p>
-                            <a href="mailto:apolobio913@gmail.com?subject=Contato%20do%20site&body=Olá,%20gostaria%20de%20falar%20com%20você.">apolobio913@gmail.com</a>
+                            <a
+                                href="mailto:apolobio913@gmail.com?subject=Contato%20do%20site&body=Olá,%20gostaria%20de%20falar%20com%20você."
+                                target="_blank"
+                            >apolobio913@gmail.com</a>
                         </p>
                     </li>
                     <li>
@@ -26,7 +29,10 @@ function Contact() {
                             src={ImgLinkendin}
                             alt="Imagem do linkendin" />
                         <p>
-                            <a href="#">Linkedin</a>
+                            <a
+                                href="https://www.linkedin.com/in/apolonio-guilherme-11a825322/"
+                                target='_blank'
+                            >Linkedin</a>
                         </p>
                     </li>
                     <li>
@@ -35,7 +41,10 @@ function Contact() {
                             alt="Imagem do GitHub"
                         />
                         <p>
-                            <a href="#">GitHub</a>
+                            <a
+                                href="https://github.com/Apolo0013"
+                                target="_blank"
+                            >GitHub</a>
                         </p>
                     </li>
                 </ul>

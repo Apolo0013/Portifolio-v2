@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Enciclopédia Negra – A-Z",
+        "aboutProject": "Projeto escolar que destaca artistas da comunidade negra organizados de A a Z, com galeria de artistas, sistema de pesquisa e páginas informativas sobre o projeto.",
+        "stacks": [
+        { "name": "React", "nameImg": "react" },
+        { "name": "JavaScript", "nameImg": "js" },
+        { "name": "CSS", "nameImg": "css" },
+        { "name": "SCSS", "nameImg": "scss" },
+        { "name": "HTML", "nameImg": "html" }
+        ],
+        "url": "https://example.com/enciclopedia-negra"
+    },
+    {
+        "name": "Tabela Periódica Interativa",
+        "aboutProject": "Projeto educacional que apresenta uma tabela periódica interativa, permitindo explorar visualmente os elementos químicos com destaque por categorias. Desenvolvido para praticar React, CSS e organização de dados em JSON.",
+        "stacks": [
+        { "name": "React", "nameImg": "react" },
+        { "name": "JavaScript", "nameImg": "js" },
+        { "name": "CSS", "nameImg": "css" },
+        { "name": "HTML", "nameImg": "html" }
+        ],
+        "url": "https://example.com/tabela-periodica"
+    },
+    {
+        "name": "Cursos-Front",
+        "aboutProject": "Aplicação frontend que simula uma plataforma de cursos online, com autenticação, dashboard de cursos, visualização de aulas e controle de acesso baseado na compra. Desenvolvido para praticar arquitetura frontend, integração com API, gerenciamento de estado assíncrono e organização escalável de projetos.",
+        "stacks": [
+        { "name": "React", "nameImg": "react" },
+        { "name": "JavaScript", "nameImg": "js" },
+        { "name": "TypeScript", "nameImg": "ts" },
+        { "name": "CSS", "nameImg": "css" },
+        { "name": "HTML", "nameImg": "html" },
+        { "name": "SCSS", "nameImg": "scss" }
+        ],
+        "url": "https://example.com/cursos-front"
+    }
+]

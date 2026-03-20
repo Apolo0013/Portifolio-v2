@@ -14,7 +14,7 @@
     padding: fn.rem(20);
     display: flex;
     flex-direction: column;
-    gap: fn.rem(20);
+    gap: fn.rem(24);
     border: 2px solid $bg;
     border-radius: 10px;
     background: linear-gradient(90deg, transparent, $bg 20%, $bg 80%, transparent);
@@ -38,7 +38,7 @@
         height: auto;
         display: flex;
         flex-direction: column;
-        gap: fn.rem(15);
+        gap: fn.rem(8);
 
         li {
             height: fn.rem(25);

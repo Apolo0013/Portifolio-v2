@@ -5,10 +5,10 @@ $line-bottom-nav: plt.$primary;
 
 .navbar {
     width: 100%;
-    height: 90px;
     background: radial-gradient(circle at center top, $radial-gradient-color 10%, transparent);
     display: grid;
-    grid-template-columns: repeat(4, 120px); 
+    grid-template-columns: repeat(4, 120px);
+    grid-template-rows: 90px;
     position: relative;
     
     &::before {

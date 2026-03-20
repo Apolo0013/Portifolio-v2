@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import CardStack from './componentes/CardStack/CardStack'
 import './Stack.scss'
 import type { MyStacks, NamesAppLayers } from './type';
@@ -14,7 +15,8 @@ function Stack() {
                     'tailwind',
                     'zustand',
                     'html',
-                    'css'
+                    'css',
+                    'scss'
                 ]
         },
         "Back-end":{
@@ -35,16 +37,29 @@ function Stack() {
         }
     }
 
+    const refSection = useRef<HTMLElement | null>(null)
     return (    
-        <section className='stack'>
+        <section className='section stack' data-id="stack" ref={refSection}>
             <div className='w-full flex flex-col flex-center gap-8'  aria-label='Titulo sessão stacks'>
                 <h1 className='h1-text'>Stacks</h1>
                 <p className='p-text'>Tecnologias que utilizo no desenvolvimento de aplicações modernas.</p>
             </div>
             <div className='stack-grid'>
-                <CardStack left='50%' AppLayer={myStacks['Front-end']}/>
-                <CardStack left='50%' AppLayer={myStacks['Back-end']}/>
-                <CardStack left='-100%' AppLayer={myStacks.Ferramentas}/>
+                <CardStack
+                    left='50%'
+                    AppLayer={myStacks['Front-end']}
+                    refSection={refSection}
+                />
+                <CardStack
+                    left='50%'
+                    AppLayer={myStacks['Back-end']}
+                    refSection={refSection}
+                />
+                <CardStack
+                    left='-100%'
+                    AppLayer={myStacks.Ferramentas}
+                    refSection={refSection}
+                />
             </div>
         </section>
     )

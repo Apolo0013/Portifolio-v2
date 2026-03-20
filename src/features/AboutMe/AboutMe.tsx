@@ -9,7 +9,7 @@ import ImgShine from './assets/shine.svg'
 
 function AboutMe() {
     return (
-        <section className='wraper-aboutme'>
+        <section className='section wraper-aboutme' data-id="about">
             <div className='aboutme'>
                 <h1 className="h1-text">Sobre Mim</h1>
                 <div className="divider-about"><div></div></div>

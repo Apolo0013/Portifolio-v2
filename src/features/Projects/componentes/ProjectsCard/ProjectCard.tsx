@@ -1,10 +1,15 @@
-import type { AboutProjectCard } from '../../type'
 import ButtonLink from '../ButtonLink/ButtonLink'
 import TechItem from '../../../../shared/UI/TechItem/TechItem'
 import './ProjectCard.scss'
+//
+import type { AboutProjectCard } from '../../../../data/type'
+import type { RefObject } from 'react'
+//props
+interface Props extends AboutProjectCard {
+    refSection: RefObject<HTMLElement | null>
+}
 
-
-function ProjectCard({name, aboutProject, stacks, url}: AboutProjectCard) {
+function ProjectCard({ name, aboutProject, stacks, url, refSection }: Props) {
     return (
         <article className='projectcard'>
             <div className='w-full h-full flex flex-col gap-0'>
@@ -15,6 +20,7 @@ function ProjectCard({name, aboutProject, stacks, url}: AboutProjectCard) {
                 { 
                     stacks.map((v, k) => (
                         <TechItem
+                            refSection={refSection}
                             name={v.name}
                             nameImg={v.nameImg}
                             key={k} />
