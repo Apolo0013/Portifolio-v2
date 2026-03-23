@@ -39,7 +39,12 @@ function Stack() {
 
     const refSection = useRef<HTMLElement | null>(null)
     return (    
-        <section className='section stack' data-id="stack" ref={refSection}>
+        <section
+            id="stack"
+            className='section stack'
+            data-id="stack"
+            ref={refSection}
+        >
             <div className='w-full flex flex-col flex-center gap-8'  aria-label='Titulo sessão stacks'>
                 <h1 className='h1-text'>Stacks</h1>
                 <p className='p-text'>Tecnologias que utilizo no desenvolvimento de aplicações modernas.</p>

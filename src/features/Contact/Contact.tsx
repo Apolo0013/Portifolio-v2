@@ -7,7 +7,11 @@ import ButtonUI from '../../shared/UI/Button/ButtonUI'
 
 function Contact() {
     return (
-        <section className='section wraper-contact' data-id="contact">
+        <section
+            id="contact"
+            className='section wraper-contact'
+            data-id="contact"
+        >
             <div className="contact">
                 <h1 className="h1-text">Contato</h1>
                 <div className="divider-about"><div></div></div>

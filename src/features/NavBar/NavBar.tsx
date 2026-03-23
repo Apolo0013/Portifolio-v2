@@ -1,13 +1,17 @@
 import Navigate from './componentes/Navigate/Navigate'
 import './NavBar.scss'
 
-function NavBar() {
+type Props = {
+    stateClass: string
+}
+
+function NavBar({ stateClass }: Props) {
     return (
-        <nav className='navbar'> 
-            <Navigate name="Projetos"/>
-            <Navigate name="Sobre"/>
-            <Navigate name="Stack"/>
-            <Navigate name="Contato"/>
+        <nav className={`navbar ${stateClass}`}> 
+            <Navigate name="Projetos" href='#project'/>
+            <Navigate name="Sobre" href='#about'/>
+            <Navigate name="Stack" href='#stack'/>
+            <Navigate name="Contato" href='#contact'/>
         </nav>
     )
 }

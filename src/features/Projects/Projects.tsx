@@ -8,7 +8,12 @@ import { useRef } from 'react'
 function Projects() {
     const refSection = useRef<HTMLElement | null>(null)
     return (
-        <section className='section projects' data-id="project" ref={refSection}>
+        <section
+            id='project'
+            className='section projects'
+            data-id="project"
+            ref={refSection}
+        >
             <div className='w-full flex items-center gap-4' aria-label="Titulo sessão projetos">
                 <h1 className="h1-text">Projetos</h1>
                 <Divider/>

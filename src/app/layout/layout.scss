@@ -8,10 +8,10 @@
     width: 100%;
     height: 100%;
     background: plt.$background;
-    gap: fn.rem(50);
     position: relative;
     overflow-y: auto;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 
     .ball {
         position: absolute;
@@ -28,11 +28,19 @@
             to {transform: translate(0);}
         }
     }
+
+    .sentinel {
+        width: 100%;
+        height: 1px;
+        margin-top: -1px;
+        flex: none;
+    }
     
     section.section {
         z-index: 2;
         position: relative;
         width: 98%;
         padding: fn.rem(8);
+        margin-top: fn.rem(48);
     }
 }

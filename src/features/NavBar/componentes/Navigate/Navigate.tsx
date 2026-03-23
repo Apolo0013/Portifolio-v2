@@ -1,17 +1,18 @@
 import './Navigate.scss'
 
 type Props = {
-    name: string
+    name: string,
+    href?: string
 }
 
-function Navigate({name}: Props) {
+function Navigate({name, href='#'}: Props) {
     return (
         <div
             className='navigate'
             aria-controls='navigation'
             aria-label={"Navegar " + name}
         >
-            <a href="#">{name}</a>
+            <a href={href}>{name}</a>
         </div>
     )
 }

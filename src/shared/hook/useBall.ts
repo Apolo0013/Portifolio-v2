@@ -1,7 +1,7 @@
 import { useStoreUI } from "../../store/usestore.UI"
 import type { ParamMoveBall } from "./type"
 
-function useObs() {
+function useBall() {
     function randint(min: number, max: number): number {
        return Math.floor(Math.random() * (max - min + 1)) + min
     }
@@ -65,4 +65,4 @@ function useObs() {
     }
 }
 
-export default useObs
+export default useBall
