@@ -1,4 +1,5 @@
 @use '../../styles/function' as fn;
+@use '../../styles/mixins' as *;
 
 .hero {
     flex-shrink: 0;
@@ -14,5 +15,22 @@
         width: 50%;
         height: fit-content;
         gap: fn.rem(8);
+    }
+}
+
+//Responsividade
+@media (max-width: 1024px) {
+    .wraper-content-hero {
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero {
+        @include flex-center;
+
+        .wraper-content-hero {
+            width: 100% !important;
+        }
     }
 }

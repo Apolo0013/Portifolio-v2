@@ -4,18 +4,18 @@
 .h1-text {
     color: plt.$text;
     font-weight: bold;
-    font-size: fn.rem(45);
+    font-size: fn.rem(28);
 }
 
 .h2-text {
     color: plt.$text;
     font-weight: bold;
-    font-size: fn.rem(30);
+    font-size: fn.rem(20);
 }
 
 .p-text {
     color: plt.$text-secondary;
-    font-size: fn.rem(22);
+    font-size: fn.rem(16);
 }
 
 //quadrado aspect-radio
@@ -34,4 +34,34 @@ $color-shadow: #0000004d;
 button {
     cursor: pointer;
     box-shadow: 6px 6px 14px 6px $color-shadow;
+}
+
+//responsividade
+@media (min-width: 1024px) {
+    .h1-text {
+        font-size: fn.rem(45);
+    }
+
+    .h2-text {
+        font-size: fn.rem(30);
+    }
+
+    .p-text {
+        font-size: fn.rem(22);
+    }
+}
+
+//se for maior ou igual
+@media (min-width: 500px) {
+    .h1-text {
+        font-size: fn.rem(36);
+    }
+
+    .h2-text {
+        font-size: fn.rem(24);
+    }
+
+    .p-text {
+        font-size: fn.rem(18);
+    }
 }
