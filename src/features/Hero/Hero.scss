@@ -34,3 +34,9 @@
         }
     }
 }
+
+@media (max-width: 500px) {
+    .hero {
+        margin-top: 0 !important;
+    }
+}

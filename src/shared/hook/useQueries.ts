@@ -1,13 +1,18 @@
 import { useEffect, useState } from "react";
 
 export function useMediaQuery(query: string) {
-    //by: https://chatgpt.com/
-    const [matches, setMatches] = useState(window.matchMedia(query).matches);
+    const getMatch = () => {
+        if (typeof window === "undefined") return false;
+        return window.matchMedia(query).matches;
+    };
+
+    const [matches, setMatches] = useState(getMatch);
 
     useEffect(() => {
+        if (typeof window === "undefined") return;
         const media = window.matchMedia(query);
-
         const listener = () => setMatches(media.matches);
+
         media.addEventListener("change", listener);
 
         return () => media.removeEventListener("change", listener);

@@ -33,7 +33,7 @@
 }
 
 //para celular
-@media (max-width: 500px) {
+@media (max-width: 500px) and (pointer: coarse) {
     .navigate {
         display: grid;
         height: 40px;

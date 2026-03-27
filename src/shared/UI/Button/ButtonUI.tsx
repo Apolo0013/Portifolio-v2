@@ -9,7 +9,7 @@ type Props = {
 function ButtonUI({name}: Props) {
     return (
         <button className="buttonUI" aria-label={`Ir ate ${name}`}>
-            <a href="#">{name}</a>
+            <a href="#" className='p-text'>{name}</a>
             <img
                 className='h-[50%] square-asp'
                 src={ImgArrow}

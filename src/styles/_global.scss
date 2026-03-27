@@ -37,20 +37,6 @@ button {
 }
 
 //responsividade
-@media (min-width: 1024px) {
-    .h1-text {
-        font-size: fn.rem(45);
-    }
-
-    .h2-text {
-        font-size: fn.rem(30);
-    }
-
-    .p-text {
-        font-size: fn.rem(22);
-    }
-}
-
 //se for maior ou igual
 @media (min-width: 500px) {
     .h1-text {
@@ -63,5 +49,19 @@ button {
 
     .p-text {
         font-size: fn.rem(18);
+    }
+}
+
+@media (min-width: 1024px) {
+    .h1-text {
+        font-size: fn.rem(45);
+    }
+
+    .h2-text {
+        font-size: fn.rem(30);
+    }
+
+    .p-text {
+        font-size: fn.rem(22);
     }
 }

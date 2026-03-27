@@ -11,7 +11,7 @@ type Props = {
 
 function NavBar({ stateClass }: Props) {
     //media queries
-    const isMobile: boolean = useMediaQuery('(max-width: 500px)')
+    const isMobile: boolean = useMediaQuery("(max-width: 500px) and (pointer: coarse)")
     //navleft 
     const [navleft, setnavleft] = useState<boolean>(false)
     return (

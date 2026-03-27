@@ -10,7 +10,7 @@ type Props = {
 }
 
 function Navigate({ name, href = '#' }: Props) {
-    const isMobile: boolean = useMediaQuery('(max-width: 500px)')
+    const isMobile: boolean = useMediaQuery('(max-width: 500px) and (pointer: coarse)')
     return (
         <div
             className='navigate'
