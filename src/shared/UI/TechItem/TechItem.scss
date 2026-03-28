@@ -13,9 +13,9 @@ $bg-about: lighten($bg, 30);
     box-shadow: 6px 6px 14px 6px $color-shadow;
     outline: 1px solid $color-outline;
     width: fit-content;
+    height: 40px;
     padding-left: fn.rem(13);
     padding-right: fn.rem(13);
-    height: 40px;
     border-radius: 5px;
     background: $bg;
     transition: 0.2s ease-in-out; 
@@ -45,5 +45,26 @@ $bg-about: lighten($bg, 30);
         width: 300px;
         height: auto;
         background: $bg-about;
+    }
+}
+
+//Responsividade
+@media (max-width: 800px) {
+    .stackproject {
+        height: 38px;
+
+        .stackproject-name {
+            font-size: fn.rem(19) !important;
+        }    
+    }
+}
+
+@media (max-width: 500px) and  (pointer: coarse) {
+    .stackproject {
+        height: 35px;
+
+        .stackproject-name {
+            font-size: fn.rem(18) !important;
+        }
     }
 }

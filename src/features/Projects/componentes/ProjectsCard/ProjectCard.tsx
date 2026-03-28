@@ -27,11 +27,10 @@ function ProjectCard({ name, aboutProject, stacks, url, refSection }: Props) {
                     ))
                 }
             </div>
-            <div className='col-start-2 col-end-3 h-full w-full flex flex-center'>
+            <div className='wraper-botao-link'>
                 {/*wraper para o ButtonUI*/}
-                <div className='w-[200px] h-[50px]'>
-                    <ButtonLink name='GitHub' url={url} />
-                </div>
+                
+                <ButtonLink name='GitHub' url={url} />
             </div>
         </article>
     )
