@@ -23,7 +23,7 @@ function AboutMe() {
                             src={ImgCalendar}
                             alt="Imagem de um calendario"
                         />
-                        <p>
+                        <p className='p-text'>
                             <strong>2 anos de experiência</strong> em Front-end
                         </p>
                     </li>
@@ -32,7 +32,7 @@ function AboutMe() {
                             src={ImgAtomo}
                             alt="Imagem de um atomo"
                         />
-                        <p>
+                        <p className='p-text'>
                             Atualmente focado em <strong>React & C#</strong>
                         </p>
                     </li>
@@ -41,7 +41,7 @@ function AboutMe() {
                             src={ImgComputer}
                             alt="Imagem de um computador"
                         />
-                        <p>
+                        <p className='p-text'>
                             Evoluindo para <strong>Full Stack</strong>
                         </p>
                     </li>
@@ -53,7 +53,7 @@ function AboutMe() {
                             src={ImgShine}
                             alt="Imagem de brilho"
                         />
-                        <p>
+                        <p className='p-text'>
                             Foco na escrita de <strong>código limpo</strong> e manutenível.
                         </p>
                     </li>
@@ -62,7 +62,7 @@ function AboutMe() {
                             src={ImgCheck}
                             alt="Imagem de verificacao"
                         />
-                        <p>
+                        <p className='p-text'>
                             Adoto <strong>boas práticas</strong> de desenvolvimento.
                         </p>
                     </li>
@@ -71,7 +71,7 @@ function AboutMe() {
                             src={ImgConstruction}
                             alt="Imagem de um contrucao"
                         />
-                        <p>
+                        <p className='p-text'>
                             Busco criar <strong>arquiteturas escaláveis</strong> e eficientes.
                         </p>
                     </li>

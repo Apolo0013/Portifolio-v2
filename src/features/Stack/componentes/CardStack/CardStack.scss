@@ -9,7 +9,7 @@ $color-border: lighten(plt.$background, 10);
     width: 100%;
     height: 100%;
     display: flex;
-    gap: fn.rem(30);
+    gap: fn.rem(24);
     flex-direction: column;
     align-items: center;
 
@@ -23,5 +23,12 @@ $color-border: lighten(plt.$background, 10);
         flex-wrap: wrap;
         gap: fn.rem(8);
         align-content: flex-start;
+    }
+}
+
+//Responsividade
+@media (max-width: 500px) and (pointer: coarse) {
+    .card-stack {
+        gap: fn.rem(18);
     }
 }

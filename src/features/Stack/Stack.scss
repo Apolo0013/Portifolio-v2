@@ -31,5 +31,6 @@
     .stack-grid {
         grid-template-columns: minmax(100px, 320px) !important; 
         grid-template-rows: repeat(3, minmax(100px, 350px));
+    
     }
 }

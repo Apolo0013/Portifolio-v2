@@ -21,7 +21,7 @@ function Contact() {
                             src={ImgEmail}
                             alt="Imagem de email"
                         />
-                        <p>
+                        <p className='p-text'>
                             <a
                                 href="mailto:apolobio913@gmail.com?subject=Contato%20do%20site&body=Olá,%20gostaria%20de%20falar%20com%20você."
                                 target="_blank"
@@ -32,7 +32,7 @@ function Contact() {
                         <img
                             src={ImgLinkendin}
                             alt="Imagem do linkendin" />
-                        <p>
+                        <p className='p-text'>
                             <a
                                 href="https://www.linkedin.com/in/apolonio-guilherme-11a825322/"
                                 target='_blank'
@@ -44,7 +44,7 @@ function Contact() {
                             src={ImgGitHub}
                             alt="Imagem do GitHub"
                         />
-                        <p>
+                        <p className='p-text'>
                             <a
                                 href="https://github.com/Apolo0013"
                                 target="_blank"

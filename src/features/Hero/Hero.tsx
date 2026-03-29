@@ -11,7 +11,10 @@ function Hero() {
                     <p className='p-text'>Front-End Desenvolvedor</p>
                 </div>
                 <p className='p-text'>Desenvolvo interfaces modernas com React e possuo experiência com APIs em .NET.</p>
-                <ButtonUI name="Ver Projetos" />
+                <ButtonUI
+                    name="Ver Projetos"
+                    href='#project'
+                />
             </article>
         </section>
     )
