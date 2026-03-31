@@ -54,11 +54,9 @@ function Contact() {
                 </ul>
                 <div className="divider-about"><div></div></div>
                 <div className='flex flex-center h-[50px] w-full'>
-                    <div className='h-full w-[200px]'>
-                        <ButtonUI
-                            name='Contate-me'
-                        />
-                    </div>  
+                    <ButtonUI
+                        name='Contate-me'
+                    />
                 </div>
             </div>
         </section>

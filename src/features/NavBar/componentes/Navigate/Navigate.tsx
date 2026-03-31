@@ -17,7 +17,10 @@ function Navigate({ name, href = '#' }: Props) {
             aria-controls='navigation'
             aria-label={"Navegar " + name}
         >
-            <a href={href}>{name}</a>
+            <a
+                href={href}
+                className='p-text'
+            >{name}</a>
             { 
                 isMobile
                     ? <div className='h-[50%] aspect-square'>

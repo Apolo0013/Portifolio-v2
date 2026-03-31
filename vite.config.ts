@@ -3,8 +3,9 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  plugins: [
-    react(),
-    tailwindcss(),
-  ],
+    base: '/Portifolio-v2/',
+    plugins: [
+        react(),
+        tailwindcss(),
+    ],
 })
