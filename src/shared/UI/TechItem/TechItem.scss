@@ -66,5 +66,9 @@ $bg-about: lighten($bg, 30);
         .stackproject-name {
             font-size: fn.rem(16) !important;
         }
+
+        .about-stack {
+            width: 250px;
+        }
     }
 }

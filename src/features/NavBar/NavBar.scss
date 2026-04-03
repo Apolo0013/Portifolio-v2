@@ -100,7 +100,6 @@ $line-bottom-nav: plt.$primary;
 @media (max-width: 600px) {
     .navbar {
         grid-template-columns: 1fr;
-
         .conteiner-icone, .divider-navbar {display: none;}
     }
 }

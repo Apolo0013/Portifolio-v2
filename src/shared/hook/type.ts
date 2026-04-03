@@ -13,3 +13,9 @@ export type ParamObsSentinel = {
     setClassNav: Dispatch<SetStateAction<ClassNav>>,
     elSentinel: HTMLDivElement
 }
+
+export type ParamAjustPositionLeft = {
+    parent: HTMLElement | null,
+    child: HTMLElement | null,
+    setLeft: Dispatch<SetStateAction<number>>
+}

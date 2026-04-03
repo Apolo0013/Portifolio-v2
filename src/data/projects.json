@@ -16,9 +16,7 @@
         "aboutProject": "Projeto educacional que apresenta uma tabela periódica interativa, permitindo explorar visualmente os elementos químicos com destaque por categorias. Desenvolvido para praticar React, CSS e organização de dados em JSON.",
         "stacks": [
         { "name": "React", "nameImg": "react" },
-        { "name": "JavaScript", "nameImg": "js" },
-        { "name": "CSS", "nameImg": "css" },
-        { "name": "HTML", "nameImg": "html" }
+        { "name": "JavaScript", "nameImg": "js" }, { "name": "CSS", "nameImg": "css" }, { "name": "HTML", "nameImg": "html" }
         ],
         "url": "https://example.com/tabela-periodica"
     },

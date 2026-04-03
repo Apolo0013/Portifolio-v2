@@ -1,9 +1,37 @@
 import type { ImagensStacks } from "../assets/stacks";
+import type { ParamAjustPositionLeft } from "./type";
 
 function useTechItem() {
     function GetStackAbout(stackKey: ImagensStacks): string {
         return StacksAbout[stackKey]
     }
+    
+
+    function AjustPositionLeft({
+        parent,
+        setLeft,
+        child
+    }: ParamAjustPositionLeft) {
+        if (!parent || !child) return 
+        //rect
+        const childrect: DOMRect = child.getBoundingClientRect()
+        const parentrect: DOMRect = parent.getBoundingClientRect()
+        //overflow do eixo X
+        const Xoverflow: { left: boolean, right: boolean } = {
+            left: childrect.left < parentrect.left,
+            right: childrect.right > parentrect.right
+        }
+        //eixo X
+        let dx: number = 0    
+        if (Xoverflow.left) { 
+            dx = parentrect.left - childrect.left
+        }
+        else if(Xoverflow.right) {
+            dx = parentrect.right - childrect.right
+        }
+        if (Xoverflow.left || Xoverflow.right) setLeft(dx)
+    }
+
     const StacksAbout: Record<ImagensStacks, string> = {
         "cSharp": "Linguagem moderna orientada a objetos da Microsoft, usada para aplicações backend, desktop e jogos com .NET.",
         "python": "Linguagem versátil e produtiva, comum em automação, APIs e ciência de dados.",
@@ -23,7 +51,8 @@ function useTechItem() {
 };
 
     return {
-        GetStackAbout
+        GetStackAbout,
+        AjustPositionLeft
     }
 }
 
