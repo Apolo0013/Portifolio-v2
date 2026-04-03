@@ -1,6 +1,9 @@
+//Hooks
 import { useEffect, useRef, useState, type RefObject } from 'react'
-import './TechItem.scss'
+import { useMediaQuery } from '../../hook/useQueries'
 import useTechItem from '../../hook/useTechItem'
+//CSS
+import './TechItem.scss'
 //Imagens
 import { type ImagensStacks, imagens } from '../../assets/stacks/index'
 
@@ -15,6 +18,8 @@ function TechItem({
     nameImg,
     refSection
 }: Props) {
+    //media queries
+    const isMobile: boolean = useMediaQuery('(max-width: 500px) and (pointer: coarse)')
     //estados/states
     const [showAbout, SetAbout] = useState<boolean>(false)
     const [left, setleft] = useState<number>(0)
@@ -38,14 +43,30 @@ function TechItem({
         })
     }, [showAbout])
 
+    useEffect(() => {
+        
+    }, [isMobile])
+
     return (
         <div
             
             style={{zIndex: showAbout ? 10000 : 5}}
             className='stackproject'
             //eventos
-            onMouseEnter={() => SetAbout(true)}
-            onMouseLeave={() => SetAbout(false)}
+            onMouseEnter={() => {
+                //caso for mobile, ele nao terar essa fucionalidade
+                if (isMobile) return
+                SetAbout(true)
+            }}
+            onMouseLeave={() => {
+                //aqui ambos terar acesso, vai servi como focus/desfoco. Assim retirando o conteiner que mostrar o about/sobre das stacks
+                SetAbout(false)
+            }}
+            onClick={() => {
+                //so vai acessa essa fucionalidade caso seja mobile
+                if (!isMobile) return
+                SetAbout(prev => !prev)
+            }}
         >
             <div className='h-[70%] square-asp'>
                 <img
